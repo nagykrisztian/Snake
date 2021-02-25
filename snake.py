@@ -24,7 +24,16 @@ fej.shape("triangle")
 fej.penup()
 fej.color("yellow")
 
+kijelzo = turtle.Turtle()
+kijelzo.color("white")
+kijelzo.hideturtle()
+kijelzo.penup()
+kijelzo.goto(-120,200)
+
 while True:
+  if 400< fej.xcor() or fej.xcor() < -400 or 300< fej.ycor()or fej.ycor() <-300:
+    kijelzo.write("Game over",font=("Arial", 36, "bold"))
   fej.forward(20)
   palya.update()
   time.sleep(0.3)
+  
