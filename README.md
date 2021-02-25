@@ -1,1 +1,3 @@
 # Snake
+
+Egy kígyós játék
